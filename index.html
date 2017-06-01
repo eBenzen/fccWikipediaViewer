@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>FCC - wikiProject</title>
+
+  <!-- favicon (image in the tab) -->
+  <link rel="shortcut icon" href="img/Wikipedia_W.svg.png" />
+
+  <!-- Bootstrap Core CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <!-- Standard for JS jQuery  https://www.w3schools.com/jquery/jquery_get_started.asp-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <!-- Standard for JS for Bootstrap?-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Internal CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <!-- Internal JavaScript -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src=js/p5.js></script>
+
+  <!-- Other Links -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+<body>
+
+<!-- Bootstrap resopinsive header that includes everything -->
+<div class="container">
+  <div class="row">
+    <div class="float-left">
+      <h2>Wiki Search</h2><span>A FreeCodeCamp.com project by <a href="https://github.com/eBenzen">eBenzen</a></span><br><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8 col-sm-8 col-md-10 col-lg-10">
+        <input id="search" type="text" placeholder="Search here..." required>
+        <button type="submit" class="btn btn-primary" onclick="getWikis()">Search</button>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 float-right">
+      <input type="button" class="btn btn-primary" onclick="openRandomWiki()" value="Random Wiki">
+    </div>
+  </div>
+</div>
+
+<!-- Output-->
+<div class="container">
+  <div id="output" class="row float-left">
+  </div>  
+</div>
+
+
+
+    
+      
+</body>
+</html>
+
+
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6"></div>
+    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
+  </div>
+</div>
+-->
