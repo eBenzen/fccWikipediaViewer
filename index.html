@@ -40,8 +40,8 @@
   </div>
   <div class="row">
     <div class="col-xs-8 col-sm-8 col-md-10 col-lg-10">
-        <input id="search" type="text" placeholder="Search here..." required>
-        <button type="submit" class="btn btn-primary" onclick="getWikis()">Search</button>
+        <input id="search" type="text" onkeydown="if (event.keyCode == 13) {document.getElementById('btnSearch').click(); return false;}" placeholder="Search here..." required>
+        <button id="btnSearch" type="submit" class="btn btn-primary" onclick="getWikis()" onkeydown="get()">Search</button>
     </div>
     <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 float-right">
       <input type="button" class="btn btn-primary" onclick="openRandomWiki()" value="Random Wiki">
